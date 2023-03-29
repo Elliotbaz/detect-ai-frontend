@@ -26,8 +26,7 @@ export default function Home() {
             question: question,
             answer: answer
         }
-        const API_URL = process.env.NODE_ENV === 'production' ? '/.netlify/functions/check' : 'http://localhost:5000/api/v1/check';
-        const res = await api.post(API_URL, data);
+        const res = await api.post("/.netlify/functions/check", data);
         setResponse(res);
         setLoading(false)
     }
