@@ -32,7 +32,6 @@ export default function Home() {
     }
 
 
-
     return (
         <>
             <BackdropLoading load={loading} />
