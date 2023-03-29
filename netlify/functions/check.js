@@ -1,6 +1,5 @@
 const { Configuration, OpenAIApi } = require('openai');
 const stringSimilarity = require('string-similarity');
-const cors = require('cors');
 require('dotenv').config();
 
 const configuration = new Configuration({
